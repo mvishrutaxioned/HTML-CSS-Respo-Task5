@@ -567,7 +567,23 @@ header h1 {
   footer styling starts here
 =================================*/ 
 
+footer { background: #000; }
 
+footer .wrapper {
+  width: 71%;
+  padding: 30px 0 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+footer span {
+  font-size: 10px;
+  align-self: flex-end;
+  color: #fff;
+}
+
+footer .nav-content { margin-bottom: 16px; }
 
  /*=================================
   footer styling ends here
