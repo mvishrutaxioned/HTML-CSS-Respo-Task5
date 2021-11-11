@@ -591,3 +591,240 @@ footer .nav-content { margin-bottom: 16px; }
 
 /*media query starts*/
 /*media query for 995px starts here*/
+@media only screen and (max-width: 1024px) {
+  .header .wrapper {
+    width: 90%;
+    justify-content: space-around;
+  }
+
+  .banner { height: auto; }
+
+  .img-text-1 h2, 
+  .img-text-4 h2,
+  .img-text-5 h2 {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .img-text-1 { top: 30%; }
+  
+  .img-text-1 i {
+    margin-top: 10%;
+    font-size: 20px;
+  }
+
+  .img-text-2 a::after {
+    content: '\f101';
+    position: absolute;
+    top: -15%;
+    right: -30%;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Font Awesome 5 Free";
+  }
+  
+  .img-text-3 h2 {
+    font-size: 18px;
+    line-height: normal;
+  }
+  
+  .img-text-3 small { padding: 10px 0 0 10px; }
+  .img-text-3 small::before { width: 20px; }
+  .img-text-4 { top: 30%; }
+  .img-text-5 { top: 30%; }
+
+  .img-text-6 h2 {
+    top: -11%;
+    left: -7%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header h1 { padding-top: 0; }
+  nav > ul, 
+  nav .nav-content { display: none; }
+
+  .burger {
+    display: initial;
+    align-self: flex-end;
+    font-size: 24px;
+  }
+
+  .banner .wrapper ul li h2 {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .gallery .wrapper ul { grid-gap: 5px; }
+  .img-text-1 { left: 10%; }
+  
+  .img-text-1 h2,
+  .img-text-4 h2,
+  .img-text-5 h2 {
+    font-size: 14px;
+    line-height: normal;
+  }
+  
+  .img-text-3 h2 { font-size: 14px; }
+  .img-text-3 small { font-size: 12px; }
+  .img-text-3 small::before { bottom: 5px; }
+
+  .img-text-6 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    opacity: 0;
+    z-index: 10;
+    transition: .2s ease-in-out;
+  }
+  
+  .img-text-6 h2 {
+    top: -14%;
+    left: -8%;
+  }
+  
+  .img-text-6 i {
+    right: 20px;
+    bottom: 10px;
+  }
+
+  footer .wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer .wrapper .footer-nav, 
+  footer .wrapper .footer-nav .nav-content { margin: 10px auto; }
+  footer .wrapper span { margin: 0 auto; }
+}
+
+@media only screen and (max-width: 540px) {
+  header .wrapper h1 { font-size: 18px; }
+
+  .banner .wrapper ul li h2 {
+    top: 45%;
+    left: 20%;
+    font-size: 18px;
+  }
+
+  .gallery .wrapper { padding: 10px; }
+
+  .gallery .wrapper ul {
+    display: grid;
+    grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    ;
+    grid-gap: 10px;
+  }
+  
+  .img-text-1 h2,
+  .img-text-4 h2,
+  .img-text-5 h2 { font-size: 34px; }
+  .img-text-1 i { font-size: 28px; }
+  .img-text-2 a { font-size: 18px; }
+  
+  .img-text-2 a::after {
+    top: -15%;
+    font-size: 18px;
+  }
+  
+  .img-text-3 h2 { font-size: 34px; }
+  
+  .img-text-3 small {
+    padding-top: 15px;
+    font-size: 18px;
+  }
+  
+  .img-text-3 small::before { display: none; }
+  .img-text-4 i,
+  .img-text-5 i { font-size: 28px; }
+  
+  .img-text-6 h2 {
+    top: -18%;
+    left: -10%;
+    font-size: 12px;
+  }
+  
+  .img-text-6 i {
+    right: 20px;
+    bottom: 10px;
+    font-size: 12px;
+  }
+
+  footer .wrapper .footer-nav { flex-direction: column; }
+
+  footer .wrapper .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header .wrapper { padding: 10px 0; }
+  header .wrapper nav i { font-size: 12px; }
+  header .wrapper h1 { font-size: 12px; }
+  
+  .banner .wrapper .right,
+  .banner .wrapper .left {
+    top: 60%;
+    bottom: 50%;
+    font-size: 14px;
+  }
+
+  .banner .wrapper ul li h2 {
+    top: 50%;
+    font-size: 14px;
+  }
+
+  .slider-dots i { font-size: 8px; }
+  .gallery .wrapper { width: 80%; }
+  
+  .img-text-3 h2 { font-size: 28px; }
+  
+  .img-text-3 small { font-size: 18px; }
+
+  .img-text-6 h2 {
+    top: -22%;
+    left: -14%;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .banner .wrapper ul li h2 { font-size: 12px; }
+
+  .slider-dots i { font-size: 6px; }
+  .img-text-1 h2,
+  .img-text-4 h2,
+  .img-text-5 h2 { font-size: 20px; }
+  .img-text-1 i { font-size: 28px; }
+  .img-text-2 a { font-size: 12px; }
+
+  .img-text-2 a::after {
+    top: -15%;
+    font-size: 14px;
+  }
+  
+  .img-text-3 h2 { font-size: 24px; }
+  .img-text-3 small { font-size: 12px; }
+  .img-text-3 small::before { display: none; }
+  
+  .img-text-6 h2 {
+    top: -20%;
+    left: -12%;
+    font-size: 12px;
+  }
+  
+  .img-text-6 i {
+    right: 20px;
+    bottom: 10px;
+    font-size: 12px;
+  }
+}
